@@ -14,16 +14,16 @@ immediate focus is on implementing the upcoming jamtis and seraphis specificatio
 go get https://github.com/WernerVasquez/gomonero
 
 
-within gomonero directory to build:
+to build (within gomonero directory):
 
 go build ./...
 
 
-within gomonero directory to test:
+to test (within gomonero directory):
 
 go test ./...
 
 
-within gomonero directory to run benchmarks:
+to run benchmarks (within gomonero directory):
 
 go test ./... -bench=.
