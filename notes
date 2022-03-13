@@ -1,0 +1,30 @@
+All notable ECC points and scalars should use two or three letter identifiers.
+The first letter is capital to indicate that it is a point.
+The first letter is lowercase to indicate that it is a scalar.
+
+NOTE: Go uses capital and lowercase to determine if a variable or function in a package is exportable.
+This may potentially introduce a conflict where it is desirable to start the variable with a capital
+to indicate that it is a point, but also desirable to start it with lowercase to keep it non-exportable
+or vice versa.
+
+All "keys" are two or three characters: kx, kxx, Kx, or Kxx where xx is an abbreviated identifier
+
+k implies a private key (scalar)
+K implies a public key (point)
+
+e.g.
+
+kfr = private find received key
+Kfr = public find received key
+
+Ktx = transaction public key
+
+ksp = private spend key
+Ksp = public spend key
+
+Kss = shared secret
+
+Ko = one time address
+ko = one time address private key
+
+similarly use hxx and Hxx for hash to scalar and hash to point results
